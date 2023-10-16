@@ -1,24 +1,38 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+import FormValidation from './components/routes/Form-Valadation/Form_Valadation.component.jsx';
+import SignIn from './components/routes/sign-in/register-login.component';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import NumberPhone from './components/routes/sign-in/otp.component';
 
-function App() {
+const expenses = [
+  {
+    id: 'e1',
+    nama: 'Nama',
+    email: 'Email',
+    age: 'Umur',
+    message: 'Message',
+  }
+];
+
+const form = [
+  {
+    id: 'e2',
+    nama: 'Nama',
+    email: 'Email',
+    password:'Password'
+  }
+];
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <div className="App">
+        <Routes>
+          <Route path="/" element={<SignIn form={form} />} />
+          <Route path='/number' element={<NumberPhone />} />
+          <Route path="/form-validation" element={<FormValidation expenses={expenses} />} /> 
+        </Routes>
+      </div>
   );
 }
 

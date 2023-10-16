@@ -1,0 +1,125 @@
+form {
+  max-width: 20%; /* Change to a percentage value for responsiveness */
+  margin: 5% auto; /* Center horizontally and add space at the top */
+  padding: 20px; /* Add some padding to the form */
+}
+
+label {
+  display: inline-block;
+  width: 50vh;
+  margin-bottom: 8px;
+  font-size: 20px; /* Adjust the font size as needed */
+  /* You can also adjust other properties like font-weight, color, etc. */
+}
+
+/* Style the text input fields */
+input[type="text"],
+input[type="email"],
+input[type="tel"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Style the submit button if you add it to your form */
+input[type="submit"] {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Style the submit button on hover */
+input[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+.button-container{
+    position: relative;
+}
+
+.sign-in-button {
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    margin: 5px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-color: #4285F4;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.5s;
+    font-size: 16px;
+    border-radius: 30px;
+    width: 200px;
+    font-weight: 900;
+    font-display: initial;
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0.1);
+    transition-duration: 0.3s;
+    transition-property: box-shadow, transform;
+}
+/* Media Query for iPhone 12 Pro and similar-sized screens */
+@media (max-width: 390px) {
+  form {
+    max-width: 90%; /* Adjust max-width for iPhone 12 Pro and similar-sized screens */
+    margin: 10% auto; /* Center with more space at the top */
+  }
+}
+
+/* Media Query for iPhone XR and similar-sized screens */
+@media (max-width: 375px) {
+  form {
+    max-width: 90%; /* Adjust max-width for iPhone XR and similar-sized screens */
+    margin: 10% auto; /* Center with more space at the top */
+  }
+}
+
+/* Media Query for Samsung Galaxy S20 Ultra and similar-sized screens */
+@media (max-width: 450px) {
+  form {
+    max-width: 90%; /* Adjust max-width for Samsung Galaxy S20 Ultra and similar-sized screens */
+    margin: 10% auto; /* Center with more space at the top */
+  }
+}
+
+/* Media Query for Samsung Galaxy S8+ and similar-sized screens */
+@media (max-width: 360px) {
+  form {
+    max-width: 90%; /* Adjust max-width for Samsung Galaxy S8+ and similar-sized screens */
+    margin: 10% auto; /* Center with more space at the top */
+  }
+}
+
+/* Media Query for Google Pixel 5 and similar-sized screens */
+@media (max-width: 432px) {
+  form {
+    max-width: 90%; /* Adjust max-width for Google Pixel 5 and similar-sized screens */
+    margin: 10% auto; /* Center with more space at the top */
+  }
+}
+
+@media (max-width: 768px) {
+  .sign-in-button, .google-button {
+    width: 150px;
+    font-size: 14px;
+  }
+}
+
+/* Adjust button styles for screens smaller than 576px wide */
+@media (max-width: 500px) {
+  .sign-in-button, .google-button {
+    width: 120px;
+    font-size: 12px;
+  }
+}
+
+
+  

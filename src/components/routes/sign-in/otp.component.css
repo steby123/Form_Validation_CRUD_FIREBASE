@@ -1,0 +1,30 @@
+.phone-signin {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translateX(-50%); 
+    text-align: center;
+}
+
+.phone-signin input[type="text"] {
+    margin-top: 10px;
+}
+
+.btn {
+    background-color: aqua;
+    transition: 1s;
+    margin-top: 10px;
+}
+
+.btn:hover{
+    background-color: aquamarine;
+}
+
+.btn1 {
+    background-color: greenyellow;
+    transition: background-color 1s;
+}
+
+.btn1:hover {
+    background-color: chartreuse;
+}
